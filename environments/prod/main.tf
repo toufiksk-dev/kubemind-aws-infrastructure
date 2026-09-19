@@ -17,7 +17,7 @@ module "vpc" {
 }
 module "s3" {
   source      = "../../modules/s3"
-  bucket_name = "kubemind-prod-data-<unique-suffix>"
+  bucket_name = var.bucket_name
 }
 resource "aws_security_group" "ec2" {
   name   = "kubemind-prod-ec2"
