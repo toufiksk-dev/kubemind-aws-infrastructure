@@ -3,6 +3,7 @@ name: Terraform PR
 on:
   pull_request:
     branches:
+      - main
       - dev
 
 permissions:
