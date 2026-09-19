@@ -10,3 +10,9 @@ variable "ami_id" {
   description = "AMI ID for the EC2 instance"
   type        = string
 }
+
+
+variable "bucket_name" {
+  description = "AWS S3 Bucket"
+  type        = string
+}
